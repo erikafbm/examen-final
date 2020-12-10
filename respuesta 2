@@ -1,0 +1,7 @@
+program respuesta2;
+begin
+WriteLn('¿que retorna la funcion EOF de pascal?');
+writeln;
+writeln;
+WriteLn('EOF es una fucion booleana que devuelve true (cierto) si ha llegado ya al final del fichero (end of file)');
+end.
