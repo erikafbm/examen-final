@@ -1,0 +1,26 @@
+Program hola_mundo;
+Uses Crt;
+var Archivo : text; {Variable tipo archivo de texto}
+    Nombre : String;
+ 
+Procedure CreaArchivo;
+begin
+  Assign(Archivo,'archivo.txt'); 
+  ReWrite(Archivo); 
+  Writeln(Archivo,'Hola Mundo');   
+  Writeln(Archivo,'Hola Mundo');   
+ end;
+ 
+begin
+  ClrScr; {Limpia la pantalla}
+  CreaArchivo; 
+  Reset(Archivo); 
+    Readln(Archivo, Nombre);  Writeln(Nombre); 
+    Readln(Archivo, Nombre);  Writeln(Nombre); 
+  Repeat Until KeyPressed;
+  Close(Archivo); 
+end.
+
+Lineas que no pertenecen a la función :
+eof(archivo);
+writeln(archivo."hola mundo");
