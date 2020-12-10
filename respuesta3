@@ -1,0 +1,37 @@
+program serie_de_fibonacci;
+uses crt;
+var
+ b,c,d,max:integer;
+begin
+writeln;
+writeln('         -----------------------------------------');
+
+write('         -- '); textcolor(12); write('  BIENVENIDO A LA SERIE FIBONACCI ');textcolor(10);  normvideo;write('  --');
+writeln('            -----------------------------------------');
+writeln;
+write('              presione enter para continuar...');
+
+readln;
+clrscr;
+writeln;
+
+
+clrscr;
+ writeln('Serie Fibonacci');
+ writeln('ingresar un numero');
+ writeln('');
+ readln(max);
+ clrscr;
+ b:=1;
+ c:=1;
+ writeln(b);
+ writeln(c);
+ while (b+c)<=max do
+  begin;
+  d:=(b+c);
+  writeln(d);
+  b:=c;
+  c:=d;
+  end;
+ readln;
+end.
